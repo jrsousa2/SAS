@@ -1,7 +1,7 @@
 libname TD teradata user=&uid. pw=&pwd. database=ud155 server=oneview;
 
 proc sql;
-connect to teradata as TD(mode=teradata server=oneview user=&uid password=&pwd);
+connect to teradata as TD(server=oneview user=&uid password=&pwd mode=teradata);
 execute (
     delete from ud155.uff597_test
     where rownum=8

@@ -1,5 +1,0 @@
-ASCII CODE Rank e Byte
-How to remove trailing and leading blanks=>strip
-How to move indentation block to the left => shift+tab
-
-How to return value &var (wo/ ;)

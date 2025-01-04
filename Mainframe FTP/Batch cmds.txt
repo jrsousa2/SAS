@@ -1,0 +1,15 @@
+data _null_;
+file "C:\Documents and Settings\josousa\My Documents\cmds.txt";
+put "user XXXX XXXX";
+put "lcd C:\temp";
+put "bin";
+cmd="get 'AC.TD070Q.P050.M01.LOSSITD.DIV"||put(&i,z4.)||"(0)' file.dat";
+put cmd;
+put "quit";
+run;
+ 
+
+options noxwait;
+
+/* aaaa IS THE MAINFRAME SERVER NAME */
+x "ftp -v -n -i -s:""C:\Documents and Settings\josousa\My Documents\cmds.txt"" aaaa";

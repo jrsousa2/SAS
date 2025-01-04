@@ -6,3 +6,5 @@
 *.png
 *.PNG
 Companies/
+*.exe
+*.pdf
