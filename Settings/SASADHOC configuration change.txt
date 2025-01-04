@@ -1,0 +1,22 @@
+The following script should be run in SAS Enterprise Guide on SASADHOC (do not run it on SASDEV1).
+After it has been run, close SAS EG, and restart it.
+Your SAS WORK library will now be created in prodSalesAnalyticsappdatasaswork.  
+(Each of you get your own workspace automatically.).
+
+ 
+
+filename xxcfg ~sasv9.cfg;
+
+data _null_;
+  file xxcfg mod;
+  put @1 '-WORK prodSalesAnalyticsappdatasaswork';
+  stop;
+run;
+
+data _null_;
+  infile xxcfg;
+  input;
+  put _infile_;
+run;
+
+filename xxcfg clear;

@@ -1,0 +1,3 @@
+/* ORACLE INDEX */
+proc sql;
+connect using sys;

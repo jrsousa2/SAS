@@ -1,0 +1,15 @@
+The SAS SFTP Access method is the following, there is more to configure with respect to the
+PuTTY software, before getting to SAS code...
+
+Configuring SSH Client Software in Unix and Windows Environments for use with the SFTP Access Method...
+https://support.sas.com/techsup/technote/ts800.pdf
+ 
+
+There are samples of the SAS code linked in this documentation and details of how to configure the PuTTY
+(Windows) and/or SSH (Unix) software to use the SAS SFTP Access method...
+
+Here is the SAS Note that discusses the different options... We discussed this on our WebEx...
+
+SAS Note #61222
+
+https://support.sas.com/kb/61/222.html
