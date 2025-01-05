@@ -1,3 +1,5 @@
+/* SAMPLES ON HOW TO CREATE INDEXES */	
+
 PROC DATASETS LIB=actper NOLIST;
 	modify premium_&month;
 		format entered_date transaction_date policy_expiry_date
@@ -21,6 +23,7 @@ PROC DATASETS LIB=actper NOLIST;
 		INDEX CREATE idx2=(load_month rownum) / unique;
 	MODIFY premium_&month
 		(sortedby=POLICY_NBR RISK_NBR COVER_CD driver_class descending TREFFDAT);
+		
 	MODIFY earned_premium_&month;
 		INDEX CREATE IDX1=(POLICY_NBR RISK_NBR COVER_CD);
 		INDEX CREATE earned_month;

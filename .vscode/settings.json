@@ -8,6 +8,9 @@
     /* # nao sei se eh necessario mais-ver settings.json as well */
     "html.suggest.html5": false,
     "editor.snippetSuggestions": "none", 
+
+    "workbench.editor.languageDetection": true,
+    
     /* works for a SE user  */
     "editor.acceptSuggestionOnEnter": "off",
     "editor.minimap.enabled": false,
@@ -23,10 +26,14 @@
     "editor.autoSurround": "never",
     "editor.autoClosingQuotes": "never",
     "editor.lightbulb.enabled": false,
-    "python.defaultInterpreterPath": "C:\\Python\\MyEnv\\Scripts\\python.exe",
-    //"python.defaultInterpreterPath": "D:\\iTunes\\myenv\\Scripts\\python.exe",
-    // "terminal.integrated.scrollback": 0,
-    "powershell.integratedConsole.forceClearScrollbackBuffer": true,
-    "python.pythonPath": "D:\\iTunes\\myenv\\Scripts\\python.exe"
+    // "python.defaultInterpreterPath": "C:\\Python\\MyEnv\\Scripts\\python.exe",
 
+    
+    "files.associations": {
+        "*.sas": "sas"
+    },
+    
+    // "terminal.integrated.scrollback": 0,
+    "powershell.integratedConsole.forceClearScrollbackBuffer": true
+    
 }

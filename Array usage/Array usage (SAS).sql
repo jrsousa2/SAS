@@ -1,4 +1,4 @@
--- COUNTS HOW MANY VALUES FROM 6405 COLS ARE IN A GIVEN RANGE
+/** COUNTS HOW MANY VALUES FROM 6405 COLS ARE IN A GIVEN RANGE **/
 data stu2.x;
    set stu2.saida4;
    /* ARRAY */
@@ -14,6 +14,6 @@ data stu2.x;
    perc1=cont1/6405;
    perc2=cont2/6405;
    keep cont1 cont2 Replicate perc1 perc2;
-   label Replicate=" ";
+   label Replicate="";
    format perc1 perc2 12.5;
 run;

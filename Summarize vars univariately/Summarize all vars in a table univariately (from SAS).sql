@@ -26,7 +26,7 @@ select;
     when (&i=var_num)
          do;
            Variab="&&Variab&i";
-           Value=trim(left(&&Variab&i));
+           Value=strip(&&Variab&i);
         end;
 %end;
 otherwise;
@@ -109,28 +109,4 @@ run;
  
 /* AAC SUMMARY */
 %tabulate(Freqs_AAC,AAC);
- 
-/*******************************************************************/
-/*******************************************************************/
-/*******************************************************************/
-/* EPICS */
-/* SELECT COLS */
-proc sql;
-select a._Name_,a.col1,b.type,count(*) as N into:Cols separated by " ",:Nulo1,:Nulo2,:Nulo3
-from Counts2 a left join vars1 b
-on a._name_=b.name
-where a.col1<=300 and _name_ not in("PRIOR6","PRIOR12");
-quit;
-%put ### COLS=&Cols;
- 
-/* FREQS */
-proc means data=ZEPICS.tx_offbal_final_202105_20201012 SUMSIZE=max missing noprint;
-var policy_key;
-ways 1;
-class &Cols;
-output out=Freqs_EPICS(DROP=num) n=num;
-run;
- 
-/* EPICS SUMMARY */
-%tabulate(Freqs_EPICS,EPICS);
- 
+

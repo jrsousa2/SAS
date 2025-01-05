@@ -2,7 +2,7 @@
 /* COL LENGTHS ARE RESIZED TO THEIR OPTIMAL SIZE                                 */
 /* (I.E., THE MINIMUM LENGTH NEEDED THAT WILL NOT CUT-OFF VALUES UNDER THE COLS) */
 
-/* 1ND MACRO (DISPLAYS TABLE SIZE) */
+/* 1st MACRO (DISPLAYS TABLE SIZE) */
 %macro Table_size(Table);
 proc sql;
 drop table EngineHost, Members;
@@ -37,7 +37,7 @@ quit;
 /*****************************************************************/
 /*****************************************************************/
 
-/* 2ND MACRO (COMPRESSES THE TABLE) */
+/* 2nd MACRO (COMPRESSES THE TABLE) */
 %macro shrinks_tbl(Table);
  
 /* DISPLAYS TABLE SIZE */
