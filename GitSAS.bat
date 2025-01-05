@@ -14,9 +14,9 @@ IF "%~1"=="" (
     REM COMMENTED OUT CODE FORCES A PUSH
     REM It loses track of remote updates
     REM The below command will only download the README.MD
-    git pull origin main --allow-unrelated-histories
+    REM git pull origin main --allow-unrelated-histories
     REM DO NOT FORCE PUSH, BEST TO MERGE HISTORIES FIRST
-    echo DO NOT EDIT ANYTHING REMOTELY TO NOT CAUSE CONFLICT, ONLY THE README
+    echo DO NOT EDIT ANYTHING REMOTELY TO NOT CAUSE CONFLICT
     REM git push origin main --force
     git push origin main
     REM echo sem nada mostra o echo status
