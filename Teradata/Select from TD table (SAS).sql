@@ -7,7 +7,7 @@ CREATE TABLE Test AS
 select *
 from connection to teradata
 (
-    SEL *
+    select *
     from ud155.c_solicitation
     where SOLICITATION_ID in (11801)
 );
