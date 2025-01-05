@@ -1,0 +1,10 @@
+REM THIS IS FILE DOWNLOAD_VAR.TXT REFERENCED IN THE BATCH SCRIPT
+option echo on
+option batch on
+option confirm off
+open sftp://k1hl:My10life@sasadhoc -hostkey="ssh-ed25519 256 ???="
+lcd "I:\Apps-Shared Data\Apps-Compensation\IC-Business\Monthly Processing\External\%YM% Processing-On Demand"
+cd "/prod/SalesAnalytics/applications/SAScode/Jose/Variance/Output"
+bin
+mget "*EG_Payout_Spreadsheet_%YCM%*_SA.xlsx"
+exit

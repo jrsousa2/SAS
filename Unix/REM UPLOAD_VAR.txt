@@ -1,0 +1,10 @@
+REM THIS IS FILE UPLOAD_VAR.TXT REFERENCED IN THE BATCH SCRIPT
+option echo on
+option batch on
+option confirm off
+open sftp://k1hl:Pwd@sasadhoc -hostkey="ssh-ed25519 256 ???"
+lcd "I:\Apps-Shared Data\Apps-Compensation\IC-Business\Monthly Processing\External\%YM% Processing-On Demand"
+cd "/prod/SalesAnalytics/applications/SAScode/Jose/Variance/Input"
+bin
+mput "*EG_Payout_Spreadsheet*.xlsx"
+exit
