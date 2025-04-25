@@ -4,3 +4,5 @@
 I use them so I don't ever have to reinvent the wheel (some of these codes are convoluted).<br>
 
 I also use it for quick reference, since it's too much information to memorize.
+
+This is a work in progress, pls bear with me. I have to clean up and convert more code files.
