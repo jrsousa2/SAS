@@ -3,8 +3,6 @@
 *.egp
 *.xlsx
 *.xls
-*.png
-*.PNG
 Companies/
 *.exe
 *.pdf
