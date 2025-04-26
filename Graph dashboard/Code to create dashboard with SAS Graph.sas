@@ -503,15 +503,15 @@ options &NOTES &SOURCE &SOURCE2 &MPRINT;
  
 /*%SENDMAIL (IMGFILE=%str(/prod/user1/uff597/BB/BB_&sysdate..png)*/
 /*,SUBJECT=%str(Web Tracker Dashboard)*/
-/*,FROM=%str(jose.sousa@capitalone.com)*/
-/*,TOLIST=%str(jose.sousa@capitalone.com)*/
-/*,CCLIST=jose.sousa@capitalone.com);*/
+/*,FROM=%str(jose.sousa@somecompany.com)*/
+/*,TOLIST=%str(jose.sousa@somecompany.com)*/
+/*,CCLIST=jose.sousa@somecompany.com);*/
  
 %SENDMAIL (IMGFILE=%str(/prod/user1/uff597/BB/BB_&sysdate..png)
 ,SUBJECT=%str(Web Tracker Dashboard)
-,FROM=%str(jose.sousa@capitalone.com)
-,TOLIST=%str(Christopher.Xie@capitalone.com,Peter.Tanner@capitalone.com,Haritha.Sharma@capitalone.com)
-,CCLIST=jose.sousa@capitalone.com);
+,FROM=%str(jose.sousa@somecompany.com)
+,TOLIST=%str(Christopher.Xie@somecompany.com,Peter.Tanner@somecompany.com,Haritha.Sharma@somecompany.com)
+,CCLIST=jose.sousa@somecompany.com);
  
 proc printto;
 run;
