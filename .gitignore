@@ -3,8 +3,9 @@
 *.egp
 *.xlsx
 *.xls
-Companies/
 *.exe
 *.pdf
 *.ini
 *.tmp
+Companies/
+.vscode/
