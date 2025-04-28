@@ -13,6 +13,6 @@ A dashboard created with SAS/GRAPH (nowadays this could be done in Power BI):
 [Web tracker dashboard](https://github.com/jrsousa2/SAS/blob/main/Graph%20dashboard/BB_12SEP11.png)
 
 A SAS stored process created to automate data pulls:
-[Web tracker dashboard](https://github.com/jrsousa2/SAS/blob/main/Stored%20Process/SAS%20stored%20process.png)
+[SAS stored process](https://github.com/jrsousa2/SAS/blob/main/Stored%20Process/SAS%20stored%20process.png)
 
 <i>PS Any info that could id anybody was carefully concealed from both code and image.</i>
