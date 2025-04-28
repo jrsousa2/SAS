@@ -1,5 +1,5 @@
 ### SAS
-**Collection of SAS and SQL codes that I developed over the years.**<br>
+**Collection of SAS and SQL codes that I've developed over the years.**<br>
 
 I use these codes so I don't ever have to reinvent the wheel (some of them are convoluted).
 
