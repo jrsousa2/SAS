@@ -9,7 +9,7 @@ This is a work in progress, please bear with me. I have to clean up and convert 
 
 **Here are some examples of final products created in SAS:**
 
-A dashboard created with SAS/GRAPH (nowadays this could be done in Power BI):
+A dashboard created with SAS/GRAPH (nowadays this could've been done more easily in Power BI):
 - [Web tracker dashboard](https://github.com/jrsousa2/SAS/blob/main/Graph%20dashboard/BB_12SEP11.png)
 
 A SAS stored process created to automate data pulls:
