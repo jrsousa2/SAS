@@ -30,17 +30,17 @@ options validvarname=any;
 %let RC=0;
 %let RUN_TIME=0;
 %let NO_MSGS=0;
-%let Path_Xlsb=%str(\\bcbsfl.com\xdivision\Apps-Shared Data\Apps-Compensation\IC-Business\Monthly Automated Tasks\AMF Reconciliation);
+%let Path_Xlsb=%str(\\somecompany.com\xdivision\Apps-Shared Data\Apps-Compensation\IC-Business\Monthly Automated Tasks\AMF Reconciliation);
  
 data _null_;
 User=compress(&_METAPERSON,"");
 User_first=scan(User,2,",");
 User_Last=scan(User,1,",");
-Email=trim(User_first)||"."||trim(User_last)||"@bcbsfl.com";
+Email=trim(User_first)||"."||trim(User_last)||"@somecompany.com";
 call symput("UserEmail2",Email);
 run;
 /* CREATES EMAIL ADDRESS */
-%let Email=%str(&UserEmail)@bcbsfl.com;
+%let Email=%str(&UserEmail)@somecompany.com;
  
 /* ORDER VARIABLES */
 %let Ret_Vars=
@@ -87,13 +87,13 @@ run;
  
 /* if 2nd run, don't send to everybody */
 %if%sysfunc(fileexist("&Path_Out/&Yester_Attach_File"))
-    %then %let Recips=%str(jose.sousa@bcbsfl.com);
+    %then %let Recips=%str(jose.sousa@somecompany.com);
 /* IF RUN_CKECK FALSE DON'T SEND TO EVERYBODY */
 %if &Run_Check=FALSE
-    %then %let Recips=%str(jose.sousa@bcbsfl.com);
+    %then %let Recips=%str(jose.sousa@somecompany.com);
 /* IF FILE NOT FOUND DON'T SEND TO EVERYBODY */
 %if not%sysfunc(fileexist(&Path_Out/&Today_Attach_File))
-    %then %let Recips=%str(jose.sousa@bcbsfl.com);
+    %then %let Recips=%str(jose.sousa@somecompany.com);
  
 %if %sysfunc(index(%quote(&Subj),Error))>0
     or %sysfunc(index(%quote(&Subj),Log))>0
@@ -104,7 +104,7 @@ run;
 Filename MYEMAIL Email
    Subject = "&Subj"
    To      = (&Recips)
-   From    = (jose.sousa@bcbsfl.com)
+   From    = (jose.sousa@somecompany.com)
    CC      = (&CC)
    Type = "text/html"
    Attach = (
