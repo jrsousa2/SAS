@@ -30,7 +30,7 @@ options validvarname=any;
 %let RC=0;
 %let RUN_TIME=0;
 %let NO_MSGS=0;
-%let Path_Xlsb=%str(\\somecompany.com\xdivision\Apps-Shared Data\Apps-Compensation\IC-Business\Monthly Automated Tasks\AMF Reconciliation);
+%let Path_Xlsb=%str(\\somecompany.com\Monthly Automated Tasks\AMF Reconciliation);
  
 data _null_;
 User=compress(&_METAPERSON,"");
