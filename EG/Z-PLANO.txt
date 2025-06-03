@@ -1,0 +1,30 @@
+1) popular as capas com Picard
+2) usar somente as que nao tem cover
+3) para as non VA, apenas procurar e atachar
+4) descartar as covers menores de 30Kb
+5) para as VA, remover o album/AA, e procurar de novo,
+primeiro salvando as Tags em Myaa, Myalb. Remover tb as
+tags anteriores de Picard, para ele nao puxar automaticamente
+6) nao fazer para as mp3 q tiverem sortartist populado
+7) depois do processo acima testar, se sortartist bate
+com art, senao a capa e AA podem estar errados. Se bater,
+reomover sortArt, de modo que as que nao estiverem corretas
+estarao populadas
+8) Para as que estiverem corretas, remover myAA e myAlb
+9) ao final, testar se as que tem capa pequena, se esta capa
+existe no itunes, posso fazer isso criando arquivos dummy
+com o mesmo nome
+10) para as que as capas nao forem encontradas, retornar
+AA/alb baseado nas MyAA,MyAlb tags
+11) depois posso ainda rodar o Pop Alb em SAS, para popular capas not VA
+12) checar sortArt blank e remover a tag sortArtError
+13) depois checar se AA bate com Art, se nao bater eh erro
+14) checar se as capas populadas dessa maneira sao consistentes (mesmo file size)
+15) substituir capas pequenas (<30Kb)
+16) se o Album for various, e art sort nao bater, remover o album, e capa
+17) Procurar a capa PRIMEIRO pelo ITUNES, antes de completar com a do Picard (OK)
+18) Trocar capas VA pequenas por grandes que a capa exista.
+x) verificar se AA esta correto
+t) checar capas mesmo size q tem albums diferentes (e vice-versa)
+
+y) Checar se tem um mesmo album com diferentes capas (OK)

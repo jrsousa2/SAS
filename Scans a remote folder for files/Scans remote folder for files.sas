@@ -70,7 +70,7 @@ run;
 /* SAMPLE Execution */
  
 /* DRIVE */
-/* 1st pmt is the directory of where the files are stored. */
+/* 1st pmt is the directory where the files are stored. */
 /* 2nd pmt is the extension you are looking for.           */
 /* 3rd pmt is the OUTPUT file */
 %Scan_drive(/prod/SalesAnalytics/applications,xlsx,File_List);
