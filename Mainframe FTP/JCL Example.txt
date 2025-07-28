@@ -1,0 +1,17 @@
+//SASJOB JOB ...
+This defines the job, with account info, job name, class, and notification details.
+
+//STEP1 EXEC SASPGM,SASPROGRAM=MYPROG
+This tells the mainframe to execute a SAS program step called MYPROG.
+
+//MYPROG DD DSN=YOUR.SAS.PROGRAM(LIBRARY),DISP=SHR
+This points to the dataset (file) where the SAS program source is stored.
+
+//SYSPRINT DD SYSOUT=*
+Where the SAS log and output listing will go.
+
+//SYSOUT DD SYSOUT=*
+Standard output.
+
+//SYSIN DD * ... /*
+You can also place SAS code inline here instead of in an external dataset.
