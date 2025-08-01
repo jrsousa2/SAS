@@ -1,0 +1,19 @@
+1. ISPF (Interactive System Productivity Facility)
+The most common TSO (Time Sharing Option) interface for IBM mainframes.
+
+Users often go to ISPF option 3.4 to browse datasets and option 6 for command entry.
+
+To submit JCL:
+SUB 'USERID.JCL(MYJOB)'
+Or while editing the JCL, just type SUBMIT on the command line.
+
+2. TSO/3270 Emulator Clients
+Used to access ISPF remotely from a PC:
+
+IBM Personal Communications
+Attachmate Extra!
+Rocket BlueZone
+TN3270 Plus
+Rumba
+
+These emulate a 3270 terminal, letting users connect to the mainframe and run TSO commands.
