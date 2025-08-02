@@ -1,4 +1,4 @@
-1. Using SAS Management Console (SMC)
+✅ 1. Using SAS Management Console (SMC)
 You can schedule SAS jobs using SMC, particularly if you're using SAS Metadata Server and Platform Process Manager (part of SAS Integration Technologies or Grid Manager).
 
 In SMC:
