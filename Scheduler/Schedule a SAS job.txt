@@ -1,0 +1,45 @@
+1. Using SAS Management Console (SMC)
+You can schedule SAS jobs using SMC, particularly if you're using SAS Metadata Server and Platform Process Manager (part of SAS Integration Technologies or Grid Manager).
+
+In SMC:
+
+Use Schedule Manager to create flow diagrams of job dependencies.
+
+Define scheduling events like time triggers or file triggers.
+
+Jobs are stored in SAS Metadata, making them manageable and reusable.
+
+✔ Good for:
+
+Centralized environments
+GUI-based management
+Metadata-integrated job tracking
+
+✅ 2. Using cron (Unix Cron Scheduler)
+You can schedule SAS jobs directly via Unix cron, bypassing SMC entirely.
+
+Example cron entry:
+
+0 3 * * * /opt/sas/sas9.4/sas -sysin /home/user/myjob.sas -log /home/user/logs/myjob.log
+
+✔ Good for:
+
+Lightweight, non-GUI setups
+Environments without Metadata Server
+Simple batch jobs
+
+✅ 3. Using Shell Scripts
+Shell scripts (.sh) often wrap SAS commands and are then scheduled via cron or other enterprise schedulers (e.g., Control-M, AutoSys).
+
+
+#!/bin/bash
+sas -sysin /home/user/myjob.sas -log /home/user/logs/myjob.log
+✅ 4. Using Third-Party Enterprise Schedulers
+Many companies integrate SAS jobs into:
+
+Control-M
+AutoSys
+IBM TWS
+Apache Airflow (in modern pipelines)
+
+They call the SAS scripts or trigger metadata-based jobs using command-line tools like sastrigger or APIs.
