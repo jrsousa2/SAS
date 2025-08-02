@@ -15,6 +15,7 @@ Centralized environments
 GUI-based management
 Metadata-integrated job tracking
 
+
 ✅ 2. Using cron (Unix Cron Scheduler)
 You can schedule SAS jobs directly via Unix cron, bypassing SMC entirely.
 
@@ -28,12 +29,14 @@ Lightweight, non-GUI setups
 Environments without Metadata Server
 Simple batch jobs
 
+
 ✅ 3. Using Shell Scripts
 Shell scripts (.sh) often wrap SAS commands and are then scheduled via cron or other enterprise schedulers (e.g., Control-M, AutoSys).
 
-
 #!/bin/bash
 sas -sysin /home/user/myjob.sas -log /home/user/logs/myjob.log
+
+
 ✅ 4. Using Third-Party Enterprise Schedulers
 Many companies integrate SAS jobs into:
 
