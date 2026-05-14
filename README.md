@@ -1,9 +1,9 @@
 ### SAS
 **Samples of SAS and SQL code that I've developed over the years.**<br>
 
-I save these files so that I don't have to reinvent the wheel (some of them are convoluted).
+I saved these files so that I don't have to reinvent the wheel (some of them are convoluted).
 
-I also use it for quick reference, since it's too much information to memorize.
+They can be used as quick reference, since it's too much information to memorize.
 
 This is a work in progress, please bear with me. I have to clean up and convert more code files.
 
