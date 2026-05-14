@@ -15,4 +15,7 @@ A dashboard created with SAS/GRAPH (nowadays this could've been done more easily
 A SAS stored process created to automate data pulls:
 - [SAS stored process](https://github.com/jrsousa2/SAS/blob/main/Stored%20Process/SAS%20stored%20process.png)
 
+A sample Proc Report Excel output (redacted):
+- [SAS Proc Report](https://github.com/jrsousa2/SAS/blob/main/Proc%20Report/Proc%20Report%20sample.png)
+
 <i>PS Any info that could id anybody was carefully concealed from both code and image.</i>
