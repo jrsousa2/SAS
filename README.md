@@ -1,7 +1,7 @@
 ### SAS
 **Samples of SAS and SQL code that I've developed over the years.**<br>
 
-I use these codes so I don't ever have to reinvent the wheel (some of them are convoluted).
+I use some these files so I don't have to reinvent the wheel (some of them are convoluted).
 
 I also use it for quick reference, since it's too much information to memorize.
 
