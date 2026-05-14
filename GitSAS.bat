@@ -9,7 +9,6 @@ IF "%~1"=="" (
   set Desc=%1
 )
 
-
  cd D:\SAS
  set GIT_TRACE=1
  echo FORCE A RE-READING OF THE .gitignore list
