@@ -1,6 +1,9 @@
 @echo off
 REM Check if the argument %1 is provided
 
+REM SAVE CUR DIR
+set CURDIR=%CD%
+
 IF "%~1"=="" (
     echo Setting description to Updt
     echo .
@@ -11,10 +14,15 @@ IF "%~1"=="" (
 
  cd D:\SAS
  set GIT_TRACE=1
- echo FORCE A RE-READING OF THE .gitignore list
- git rm -r --cached .
- git add .
- git branch -M main
+ echo TO FORCE A RE-READING OF THE .gitignore list 
+ echo uncomment the line
+ REM git rm -r --cached .
+ REM adds new + modified files
+ REM git add .
+ REM ADDS EVERYTHING
+ git add -A
+ REM BELOW MAY NOT BE NEEDED ANYMORE
+ REM git branch -M main
  git commit -m %Desc%
  REM COMMENTED OUT CODE FORCES A PUSH
  REM It loses track of remote updates
@@ -24,9 +32,12 @@ IF "%~1"=="" (
  echo DO NOT EDIT ANYTHING REMOTELY TO NOT CAUSE CONFLICT
  REM git push origin main --force
  git push origin main
- REM echo sem nada mostra o echo status
- echo .
- echo .
+ REM echo with nothing displays echo status
+ echo.
+ echo.
  echo VIEWS IF BATCH SUCCEEDED
- git log -n 1
+ REM USING "git log -n 1" IS NOT TOO USEFUL
+ git log -1 --name-status 
+ cd %CURDIR%
+ echo.
 
