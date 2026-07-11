@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_notdigit_compress",
+  "source_file": "Reminders/NotDigit.sas",
+  "source_blob_sha": "aa342d92822f3df6ba48d3832d44bba8069c8aaf",
+  "source_commit": "606a3ae602e9a2daf6895b38ebf8e5f7a111c23c",
+  "notes": "Byte-identical DATA step exercising notdigit(compress(x)) over a literal DO list. Added a trailing PROC PRINT. Investigated an apparent 1-row-vs-5-PUT-lines discrepancy; confirmed against the SAS 9.4 DATA step execution model that a single implicit OUTPUT at RUN time (no SET/INFILE driving the step) is correct -- the DO loop runs all 5 iterations within one DATA step pass, and the dataset legitimately ends up with 1 row holding the final loop values. Not a Jenner bug."
+}

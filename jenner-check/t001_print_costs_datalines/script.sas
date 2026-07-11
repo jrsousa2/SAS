@@ -1,0 +1,29 @@
+/* Adapted from Reminders/Datalines.sas in jrsousa2/SAS.               */
+/* Original DATA step + INFILE DATALINES block is unchanged below.     */
+/* Added: PROC PRINT + PROC MEANS so the run produces an observable    */
+/* listing (the original script only loaded the data, no output).     */
+
+/* INSERTS HISTORICAL SOLS.# PRINT COSTS */
+/* this is done */
+data print_costs;
+infile datalines delimiter='09'x dsd firstobs=1;
+input solicitation_id	production_cell_id	print	inserts	OE	Postage	BRE	LL	Postage_with_gst;
+cards;
+11572	18	37471.73	20616.66	117037.08	11789.51	0	0	0
+11572	19	37611.06	50286.48	116356.56	11717.89	0	0	0
+11572	20	37605.45	14341.95	116311.46	11716.14	0	0	0
+11572	21	18622.32	10261.25	59240.93	5867.87	0	0	0
+11572	22	14919.87	8108.08	47579.71	4636.56	0	0	0
+11572	23	28151.73	12141.09	126212.08	12661.27	0	0	0
+11572	24	4640.86	3911.30	26278.87	837.01	0	0	0
+11572	25	48078.55	14981.79	214628.36	21684.26	0	0	0
+11572	26	12210.67	6157.35	55255.43	5443.06	0	0	0
+;
+run;
+
+proc print data=print_costs noobs;
+run;
+
+proc means data=print_costs sum maxdec=2;
+    var print inserts OE Postage;
+run;

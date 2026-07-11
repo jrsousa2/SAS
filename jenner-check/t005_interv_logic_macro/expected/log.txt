@@ -1,0 +1,23 @@
+NOTE: Option OBS changed to 100.
+### INITIAL NUMBER OF SPLITS=3
+### I=1 VALUE=20 ROWS=20
+### I=2 VALUE=34 ROWS=34
+### I=3 VALUE=56 ROWS=56
+####
+### NOBS=110 SUM=110 START=&START3 ROWS=&Rows3
+####
+#### FINAL NUMBER OF SPLITS=3
+####
+### I=1 START=1 END=20 ROWS=20
+### I=2 START=21 END=54 ROWS=34
+### I=3 START=55 END=110 ROWS=56
+NOTE: DATA splits
+
+
+NOTE: Wrote splits (3 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=splits
+
+NOTE: PROC PRINT completed: 3 observations printed, 4 variables

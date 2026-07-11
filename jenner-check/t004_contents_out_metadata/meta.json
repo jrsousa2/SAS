@@ -1,0 +1,7 @@
+{
+  "bundle": "t004_contents_out_metadata",
+  "source_file": "Layouts/Pulls table layouts from dictionary.sas",
+  "source_blob_sha": "1e896e3895e5cad1afb3b3830d31573f6b8d2520",
+  "source_commit": "606a3ae602e9a2daf6895b38ebf8e5f7a111c23c",
+  "notes": "Preserves the source's dictionary.tables/dictionary.columns PROC SQL join technique for pulling a table's full layout. Substituted the external EDW.FIND_ACCTS reference with a small mock WORK.FIND_ACCTS table (reusing the script's own 'find_accts' table name and account-oriented field naming); dropped datarep/num_character/num_numeric from the SELECT list as those are not real dictionary.tables columns in SAS 9.4 (confirmed against Jenner's own valid-fields error message, which matches the documented dictionary.tables/columns schema)."
+}

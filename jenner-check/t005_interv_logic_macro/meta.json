@@ -1,0 +1,7 @@
+{
+  "bundle": "t005_interv_logic_macro",
+  "source_file": "Splits file based on Tuple/Split file based on a Tuple with N numbers.sas",
+  "source_blob_sha": "6ab1deb23e4df4c424d2ad87c071a3d24048dca0",
+  "source_commit": "606a3ae602e9a2daf6895b38ebf8e5f7a111c23c",
+  "notes": "The %Interv_logic macro (byte-identical to source) computes START/END row-index pairs that split a table into N pieces given a tuple of desired row counts, e.g. (20,34,56) covering a 110-row table. The source file defines the macro but never calls it (only a header comment describes the intended usage); wrote a caller using that exact example, plus a small DATA step + PROC PRINT to make the resulting split boundaries observable."
+}

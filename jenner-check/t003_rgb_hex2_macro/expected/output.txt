@@ -1,0 +1,8 @@
+
+  Color_Name  Hex_Code
+------------  --------
+Company Blue  CX0091CC
+Pure White    CXFFFFFF
+Pure Black    CX000000
+Highlight     CXFFEB3B
+

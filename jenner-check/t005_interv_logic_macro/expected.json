@@ -1,0 +1,15 @@
+{
+  "_captured_at": "2026-07-11T11:20:00Z",
+  "_captured_run_id": "r_3a8fbbe4337b49a596ca7a6596113813",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "### INITIAL NUMBER OF SPLITS=3",
+    "### I=1 START=1 END=20 ROWS=20",
+    "### I=2 START=21 END=54 ROWS=34",
+    "### I=3 START=55 END=110 ROWS=56",
+    "NOTE: Wrote splits (3 rows, 4 columns)."
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

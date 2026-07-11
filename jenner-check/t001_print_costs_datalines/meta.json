@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_print_costs_datalines",
+  "source_file": "Reminders/Datalines.sas",
+  "source_blob_sha": "3beb7e906ef7105b396348f0e935afa3fd33680d",
+  "source_commit": "606a3ae602e9a2daf6895b38ebf8e5f7a111c23c",
+  "notes": "Loads solicitation print-cost history via inline DATALINES (delimiter='09'x dsd); DATA step and datalines block are byte-identical to the source. Added PROC PRINT + PROC MEANS so the run produces an observable listing (the original script only loaded data, no output)."
+}

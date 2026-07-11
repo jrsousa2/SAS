@@ -1,0 +1,7 @@
+{
+  "bundle": "t006_tabulate_macro",
+  "source_file": "Summarize vars univariately/Summarize all vars in a table univariately.sas",
+  "source_blob_sha": "1ae968fc1eae917e8235bd0f08991710afe2a20f",
+  "source_commit": "606a3ae602e9a2daf6895b38ebf8e5f7a111c23c",
+  "notes": "The %tabulate macro (byte-identical to source) turns a PROC MEANS/SUMMARY WAYS-1 output into a long-format univariate frequency table via open()/varname()/attrn() introspection plus a DATA step SELECT/WHEN dispatch keyed on _TYPE_. Substituted the external AAC.tx_offbal_final_202105_20201012 UNC-path table with a small mock WORK.claims_sample (5 rows, region/status); used CLASS region status (explicit list) instead of the source's CLASS _all_, since Jenner does not yet expand _ALL_ inside a PROC MEANS CLASS statement (filed separately) -- CLASS with an explicit variable list is equally documented PROC MEANS syntax and is exactly the form the source's own sibling file (Reminders/Tabulate.sas) demonstrates for this same macro."
+}
