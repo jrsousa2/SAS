@@ -1,0 +1,7 @@
+{
+  "bundle": "t003_rgb_hex2_macro",
+  "source_file": "Proc Report/Proc Report-SIU metrics.sas",
+  "source_blob_sha": "107ffebab2bca762f034ccdfcfbf46dc8669cb59",
+  "source_commit": "606a3ae602e9a2daf6895b38ebf8e5f7a111c23c",
+  "notes": "The %Hex2/%RGB macro pair (byte-identical to source) converts R,G,B integers to a CXrrggbb hex color code used to brand PROC REPORT/ODS styling. Source file defines the macros inline with a single %RGB(0,145,204) call embedded in a much larger PROC REPORT job with many undefined external macros/data; wrote a small caller (4 %RGB(...) calls + PROC PRINT) that exercises the macro pair in isolation, reusing the same brand-blue RGB(0,145,204) value from the original."
+}

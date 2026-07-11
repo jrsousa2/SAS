@@ -1,0 +1,15 @@
+NOTE: Option OBS changed to 100.
+NOTE: DATA work.find_accts
+
+
+NOTE: Wrote work.find_accts (3 rows, 3 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: Table All_layouts created.
+NOTE: PROC SQL statement used.
+NOTE: PROC PRINT data=All_layouts
+
+NOTE: PROC PRINT completed: 3 observations printed, 6 variables

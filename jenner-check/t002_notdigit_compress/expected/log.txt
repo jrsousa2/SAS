@@ -1,0 +1,16 @@
+NOTE: Option OBS changed to 100.
+NOTE: DATA test
+
+x=123    y=0
+x=a      y=1
+x=a1a    y=1
+x=1a1    y=2
+x=1 1    y=0
+
+NOTE: Wrote test (1 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=test
+
+NOTE: PROC PRINT completed: 1 observations printed, 2 variables

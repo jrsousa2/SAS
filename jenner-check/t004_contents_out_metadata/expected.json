@@ -1,0 +1,12 @@
+{
+  "_captured_at": "2026-07-11T11:00:00Z",
+  "_captured_run_id": "r_00f0972bfc4644e09249e086bff29533",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Table All_layouts created.",
+    "NOTE: PROC PRINT completed: 3 observations printed, 6 variables"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

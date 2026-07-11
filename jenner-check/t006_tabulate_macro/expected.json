@@ -1,0 +1,14 @@
+{
+  "_captured_at": "2026-07-11T11:40:00Z",
+  "_captured_run_id": "r_5a23c66d139e4bbea758f3fe259304d0",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "### var 1=region",
+    "### var 2=status",
+    "NOTE: Table tab_claims created.",
+    "NOTE: PROC PRINT completed: 5 observations printed, 5 variables"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}

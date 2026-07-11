@@ -1,0 +1,7 @@
+
+libname     memname       name  type  length  varnum
+-------  ----------  ---------  ----  ------  ------
+WORK     FIND_ACCTS  acct_name  char      20       1
+WORK     FIND_ACCTS  acct_id    num        8       2
+WORK     FIND_ACCTS  balance    num        8       3
+
